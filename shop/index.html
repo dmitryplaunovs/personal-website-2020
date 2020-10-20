@@ -42,7 +42,7 @@
 <body class="grey_background">
 
 <!-- Animations on scroll -->
-<script src="../wow.min.js"></script>
+<script src="../3rd-party/wow.min.js"></script>
 <script>
 new WOW().init()
 </script>
@@ -92,11 +92,11 @@ new WOW().init()
 <table class="footer_section">
   <tr>
     <td>
-			<div class="footer_outer">
-  	    <p class="footer_inner fadeIn wow" data-wow-duration="3.0s" data-wow-delay="0.0s">
-  	      &copy; Dmitry Plaunov&nbsp;&nbsp;  |  &nbsp;&nbsp;<span style="color:black;cursor:pointer;" onclick="JSFadeMain()">Main</span>
-  	    </p>
-			</div>
+      <div class="footer_outer">
+        <p class="footer_inner fadeIn wow" data-wow-duration="3.0s" data-wow-delay="0.0s">
+          &copy; Dmitry Plaunov&nbsp;&nbsp;  |  &nbsp;&nbsp;<span style="color:black;cursor:pointer;" onclick="JSFadeMain()">Main</span>
+        </p>
+      </div>
     </td>
   </tr>
 </table>
@@ -104,25 +104,25 @@ new WOW().init()
 <!-- Fade-out on the button click in the footer -->
 <script>
 function JSFadeMain(){
-	linkLocation = '../index.html';
-	function myLoop1() {
-		i = 1;
-		body = document.getElementsByTagName("body")[0];
-		body.style.opacity = 1;
-		function myLoop2() {
-			setTimeout(function() {
-				body.style.opacity = body.style.opacity - 0.05; // gradation of fadeOut
-				i++;
-				if (i < 21) {
-					myLoop2();
-				}
-			}, 20) // fadeOut speed (wait between gradation changes)
-		};
-		myLoop2();
-	}
-	myLoop1()
-	//setTimeout(function() {window.location.pathname = '/'}, 800)
-	setTimeout(function() {window.location = window.location.hostname + linkLocation}, 800)
+  linkLocation = '../index.html';
+  function myLoop1() {
+    i = 1;
+    body = document.getElementsByTagName("body")[0];
+    body.style.opacity = 1;
+    function myLoop2() {
+      setTimeout(function() {
+        body.style.opacity = body.style.opacity - 0.05; // gradation of fadeOut
+        i++;
+        if (i < 21) {
+          myLoop2();
+        }
+      }, 20) // fadeOut speed (wait between gradation changes)
+    };
+    myLoop2();
+  }
+  myLoop1()
+  //setTimeout(function() {window.location.pathname = '/'}, 800)
+  setTimeout(function() {window.location = window.location.hostname + linkLocation}, 800)
 }
 </script>
 
