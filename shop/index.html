@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Shop | Dmitry Plaunov</title>
+
+<!-- Defining a thumbnail for shared links -->
+<link rel="image_src" href="../images/cover.png">
+<meta property="og:title" content="Shop | Dmitry Plaunov">
+<meta property="og:description" content="Selected items from the latest collection">
+<meta property="og:image" content="../images/cover.png">
+
+<!-- Adding meta tags -->
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="robots" content="NOINDEX, FOLLOW, NOARCHIVE">
+<meta name="url" content="www.dmitryplaunov.com/shop">
+<meta name="keywords" content="Dmitry Plaunov, shop, personal website, personal page, website">
+<meta name="description" content="Selected items from the latest collection">
+<meta name="author" content="Dmitry Plaunov">
+<link rel="shortcut icon" href="../favicon.png" type="image/x-icon">
+
+<!-- Loading CSS -->
+<link rel="stylesheet" href="../modified-bootstrap.min.css">
+<link rel="stylesheet" href="../main.css">
+<link rel="stylesheet" href="../animations.css">
+
+<!-- Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-60376515-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41032804 = new Ya.Metrika({ id:41032804, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/41032804" style="position:absolute; left:-9999px;" alt=""></div></noscript>
+<!-- Analytics end -->
+
+</head>
+<body class="grey_background">
+
+<!-- Animations on scroll -->
+<script src="../wow.min.js"></script>
+<script>
+new WOW().init()
+</script>
+
+<!-- Top social button section -->
+<div class="topbar_section">
+  <table class="fadeIn wow" style="visibility:hidden;" data-wow-duration="3.0s" data-wow-delay="0.5s">
+    <tr>
+      <td>
+        <a href="http://www.linkedin.com/pub/dmitry-plaunov/85/37/6ab" target="blank" class="top_bar_link">
+          <img class="topbar_icon" src="../images/inlinked1.png" alt="Work profile online" onclick="ga('send', 'event', 'social', 'topbar', 'LinkedIn');">
+        </a>
+        <a href="../Next best hire. Dmitry Plaunov.pdf" target="blank" style="margin:3px;">
+          <img class="topbar_icon" src="../images/cvicon.png" alt="CV. Dmitry Plaunov" onclick="ga('send', 'event', 'CTA', 'topbar', 'CV');">
+        </a>
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div class="container wow fadeIn shop_container" data-wow-duration="1.6s" data-wow-delay="0.0s" style="visibility:hidden;margin-top:32px;">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-md-6" style="margin:0px;padding:0px;border:none;">
+      <div class="halfpictureshop ap1" onclick="ga('send', 'event', 'shop', 'T-shirt', 'click');">
+        <div class="darkhover"></div>
+        <p class="shop_price shop_price_1">2 620 €<br><span class="shop_price_sale">ON SALE</span>
+        </p>
+      </div>
+    </div>
+    <div class="col-12 col-sm-6 col-md-6" style="margin:0px;padding:0px;border:none;">
+      <div class="halfpictureshop ap2" onclick="ga('send', 'event', 'shop', 'Mug', 'click');">
+        <div class="darkhover"></div>
+        <p class="shop_price shop_price_2">1 980 €<br><span class="shop_price_sale">LAST ITEMS</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container shop_container inspired_section">
+  <p>
+    <b>INSPIRED BY <i>MYSELF</i></b>
+  </p>
+</div>
+
+
+<table class="footer_section">
+  <tr>
+    <td>
+			<div class="footer_outer">
+  	    <p class="footer_inner fadeIn wow" data-wow-duration="3.0s" data-wow-delay="0.0s">
+  	      &copy; Dmitry Plaunov&nbsp;&nbsp;  |  &nbsp;&nbsp;<span style="color:black;cursor:pointer;" onclick="JSFadeMain()">Main</span>
+  	    </p>
+			</div>
+    </td>
+  </tr>
+</table>
+
+<!-- Fade-out on the button click in the footer -->
+<script>
+function JSFadeMain(){
+	linkLocation = '../index.html';
+	function myLoop1() {
+		i = 1;
+		body = document.getElementsByTagName("body")[0];
+		body.style.opacity = 1;
+		function myLoop2() {
+			setTimeout(function() {
+				body.style.opacity = body.style.opacity - 0.05; // gradation of fadeOut
+				i++;
+				if (i < 21) {
+					myLoop2();
+				}
+			}, 20) // fadeOut speed (wait between gradation changes)
+		};
+		myLoop2();
+	}
+	myLoop1()
+	//setTimeout(function() {window.location.pathname = '/'}, 800)
+	setTimeout(function() {window.location = window.location.hostname + linkLocation}, 800)
+}
+</script>
+
+</body>
+</html>
