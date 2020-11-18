@@ -24,9 +24,9 @@
 <link rel="preload" as="font" href="fonts/montserrat-700-v9.woff2" type="font/woff2" crossorigin="anonymous">
 
 <!-- Loading CSS -->
-<link rel="stylesheet" href="modified-bootstrap.min.css">
-<link rel="stylesheet" href="main.css">
-<link rel="stylesheet" href="animations.css">
+<link rel="stylesheet" href="css/modified-bootstrap.min.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/animations.css">
 
 <!-- Analytics -->
 <script>
@@ -37,9 +37,6 @@
   ga('create', 'UA-60376515-3', 'auto');
   ga('send', 'pageview');
 </script>
-
-<script> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter41032804 = new Ya.Metrika({ id:41032804, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/41032804" style="position:absolute; left:-9999px;" alt=""></div></noscript>
 <!-- Analytics end -->
 
 <!-- Letter iteration effect -->
@@ -79,20 +76,10 @@ setInterval(iteration_2,9800);
 </script>
 
 </head>
-<body onload="timeFunction()">
+<body onload="localTimeFunction()">
 
 <!-- Time display on the homepage -->
-<script>
-function timeFunction() {
-  var today = new Date();
-  if (today.getUTCHours() >= 22) {my_hours = today.getUTCHours() - 22} else {my_hours = today.getUTCHours() + 2}
-  if (my_hours < 10) {hours = "0" + my_hours} else {hours = my_hours}
-  if (today.getMinutes() < 10) {minutes = "0" + today.getMinutes()} else {minutes = today.getMinutes()}
-  document.getElementById('time_hours').innerHTML = hours;
-  document.getElementById('time_minutes').innerHTML = minutes;
-}
-setInterval(timeFunction,10000); // updating time every 10 seconds
-</script>
+<script src="js/local_time.js"></script>
 
 <div class="page">
 
@@ -110,7 +97,7 @@ new WOW().init()
         <a href="http://www.linkedin.com/pub/dmitry-plaunov/85/37/6ab" target="blank" class="top_bar_link">
           <img class="topbar_icon" src="images/inlinked1.png" alt="Work profile online" onclick="ga('send', 'event', 'social', 'topbar', 'LinkedIn');">
         </a>
-        <a href="Next best hire. Dmitry Plaunov.pdf" target="blank" style="margin:3px;">
+        <a href="http://dmitryplaunov.com/Next%20best%20hire.%20Dmitry%20Plaunov.pdf" target="blank" style="margin:3px;">
           <img class="topbar_icon" src="images/cvicon.png" alt="CV. Dmitry Plaunov" onclick="ga('send', 'event', 'CTA', 'topbar', 'CV');">
         </a>
       </td>
@@ -161,7 +148,7 @@ new WOW().init()
         </div>
 
         <div class="intro_outer_about about_first only_desktop">
-          <p class="intro_inner fadeIn wow me_overview" data-wow-duration="2.3s" data-wow-delay="7.0s" style="visibility:hidden;">
+          <p class="intro_inner fadeIn wow me_overview" data-wow-duration="1.8s" data-wow-delay="6.0s" style="visibility:hidden;">
             3+ years of experience in <span style="color:#000cff;">Product Analytics</span> and <span style="color:#000cff;">CRO</span>. A self-taught <span style="color:#000cff;">developer</span> with 20+ websites. A graduate from the <span style="color:#000cff;">top business school</span> in the Nordics and Baltics.
           </p>
         </div>
@@ -174,7 +161,7 @@ new WOW().init()
         </div>
 
         <div class="intro_outer_mobile only_mobile line_2">
-          <p class="intro_inner appear_2 wow" data-wow-duration="4.0s" data-wow-delay="3.15s">
+          <p class="intro_inner appear_2 wow" data-wow-duration="4.0s" data-wow-delay="3.12s">
             Plaunov
           </p>
         </div>
@@ -186,7 +173,7 @@ new WOW().init()
         </div>
 
         <div class="intro_outer_about_mobile about_first only_mobile">
-          <p class="intro_inner fadeIn wow me_overview" data-wow-duration="2.3s" data-wow-delay="7.0s" style="visibility:hidden;">
+          <p class="intro_inner fadeIn wow me_overview" data-wow-duration="1.9s" data-wow-delay="5.8s" style="visibility:hidden;">
             3+ years of experience in <span style="color:#000cff;">Product Analytics</span> and <span style="color:#000cff;">CRO</span>. A self-taught <span style="color:#000cff;">developer</span> with 20+ websites. A graduate from the <span style="color:#000cff;">top business school</span> in the Nordics and Baltics.
           </p>
         </div>
@@ -520,7 +507,7 @@ function expandJobs() {
         Based<br class="only_mobile"> in Berlin.
       </p>
       <p class="wow basedin2 fadeIn" data-wow-duration="2.0s" data-wow-delay="0s">
-        Willing<br class="only_mobile"> to relocate.
+        Ready<br class="only_mobile"> to relocate.
       </p>
       <div class="basedin3">
         <div class="wow underlining" data-wow-duration="1.5s" data-wow-delay="0.5s">
@@ -539,12 +526,12 @@ function expandJobs() {
       <div class="logos_outer">
         <div class="contactlogos">
           <div class="contactlogo1 fadeIn wow" data-wow-duration="2.0s" data-wow-delay="0.0s">
-            <a href="https://www.linkedin.com/in/dmitryplaunov/">
+            <a href="https://www.linkedin.com/in/dmitryplaunov/" target="blank">
               <img class="contactlogo1_inner" src="images/inlinked2.png" onclick="ga('send', 'event', 'social', 'contacts', 'LinkedIn');" alt="Work profile online">
             </a>
           </div>
           <div class="contactlogo2 fadeIn wow" data-wow-duration="2.0s" data-wow-delay="0.0s">
-            <a href="https://angel.co/dmitry-plaunov">
+            <a href="https://angel.co/u/dmitryplaunov" target="blank">
               <img class="contactlogo2_inner" src="images/angel.png" onclick="ga('send', 'event', 'social', 'contacts', 'AngelList');" alt="Startup profile online">
             </a>
           </div>
@@ -554,7 +541,7 @@ function expandJobs() {
         </div>
       </div>
 
-      <a href="Next best hire. Dmitry Plaunov.pdf" target="blank" download="Next best hire. Dmitry Plaunov.pdf">
+      <a href="http://dmitryplaunov.com/Next%20best%20hire.%20Dmitry%20Plaunov.pdf" target="blank" download="http://dmitryplaunov.com/Next%20best%20hire.%20Dmitry%20Plaunov.pdf">
         <button class="btn-cv-download wow fadeIn" input type="submit" onclick="ga('send', 'event', 'CTA', 'contacts', 'Download CV');" data-wow-duration="2.0s" data-wow-delay="0.0s">
           DOWNLOAD CV
         </button>

@@ -4,8 +4,8 @@
   font-weight: 500;
   font-display: swap;
   unicode-range: U+000-5FF;
-  src: url('fonts/montserrat-400-v10.woff2') format('woff2'),
-  url('fonts/montserrat-400-v10.woff') format('woff');
+  src: url('../fonts/montserrat-400-v10.woff2') format('woff2'),
+  url('../fonts/montserrat-400-v10.woff') format('woff');
 }
 @font-face {
   font-family: 'Montserrat';
@@ -13,8 +13,8 @@
   font-style: normal;
   font-weight: 700;
   /* unicode-range: U+000-5FF; euro sign */
-  src: url('fonts/montserrat-700-v9.woff2') format('woff2'),
-  url('fonts/montserrat-700-v9.woff') format('woff');
+  src: url('../fonts/montserrat-700-v9.woff2') format('woff2'),
+  url('../fonts/montserrat-700-v9.woff') format('woff');
 }
 @font-face {
   font-family: 'Carlito';
@@ -22,8 +22,8 @@
   font-weight: 400;
   unicode-range: U+000-5FF;
   font-display: swap;
-  src: url('fonts/carlito-regular.woff2') format('woff2'),
-  url('fonts/carlito-regular.woff') format('woff');
+  src: url('../fonts/carlito-regular.woff2') format('woff2'),
+  url('../fonts/carlito-regular.woff') format('woff');
 }
 @font-face {
   font-family: 'Carlito';
@@ -31,8 +31,8 @@
   font-weight: 700;
   unicode-range: U+000-5FF;
   font-display: swap;
-  src: url('fonts/carlito-bold.woff2') format('woff2'),
-  url('fonts/carlito-bold.woff') format('woff');
+  src: url('../fonts/carlito-bold.woff2') format('woff2'),
+  url('../fonts/carlito-bold.woff') format('woff');
 }
 
 /* General properties */
@@ -42,9 +42,8 @@
   box-sizing:border-box;
 }
 body {
-  margin:0;
   font-family:Montserrat;
-  color:#000000;
+  color:#000;
   height:100%;
   opacity:1;
   -webkit-animation:backgroundAppear 1s;
@@ -76,7 +75,7 @@ html {
   scroll-behavior:smooth;
 }
 a, a:hover {
-  color:#ffffff;
+  color:#fff;
   text-decoration:none;
 }
 
@@ -112,7 +111,6 @@ a, a:hover {
   font-weight:700;
   font-size:80px;
   color:#343434;
-  font-family:Montserrat;
   line-height:1;
   text-align:center;
   opacity:0;
@@ -160,7 +158,6 @@ a, a:hover {
   font-weight:700;
   font-size:80px;
   color:#343434;
-  font-family:Montserrat;
   letter-spacing:-1px;
   text-align:left;
   opacity:0;
@@ -309,7 +306,6 @@ a, a:hover {
   position:relative;
   top:20px;
   left:0px;
-  font-family:Montserrat;
   margin-bottom:25px;
 }
 .panel_aligning_to_left {
@@ -346,7 +342,6 @@ a, a:hover {
   text-align:center;
   top:50px;
   color:#343434d9;
-  font-family:Montserrat;
   font-size:14.4px;
   margin-right:5px;
   -webkit-transition: all 0.3s;
@@ -399,7 +394,6 @@ a, a:hover {
 .award {
   color:#343434;
   font-size:22.4px;
-  font-family:Montserrat;
   font-weight:700;
   letter-spacing:-0.8px;
 }
@@ -531,7 +525,6 @@ a, a:hover {
   font-weight:500;
   color:#343434;
   line-height:1.4;
-  font-family:Montserrat;
   -webkit-transform: scale(1,1.05);
   -moz-transform: scale(1,1.05);
   -ms-transform: scale(1,1.05);
@@ -539,7 +532,6 @@ a, a:hover {
   transform: scale(1,1.05);
 }
 .job_description_list {
-  font-family:Montserrat;
   font-size:12.8px;
   font-weight:500;
   color:#343434;
@@ -656,7 +648,6 @@ hr {
   font-size:70px;
   height:85px;
   color:#343434;
-  font-family:Montserrat;
   text-align:left;
   line-height:1;
 }
@@ -665,7 +656,6 @@ hr {
   font-size:70px;
   height:85px;
   color:#000cff;
-  font-family:Montserrat;
   text-align:left;
   line-height:1;
 }
@@ -807,10 +797,10 @@ hr {
   transition:all 0.8s
 }
 .ap1 {
-  background-image:url('images/shop2.jpg');
+  background-image:url('../images/shop2.jpg');
 }
 .ap2 {
-  background-image:url('images/shop1.jpg');
+  background-image:url('../images/shop1.jpg');
 }
 .shop_price {
   position:absolute;
@@ -1101,8 +1091,8 @@ hr {
   .basedin3 {margin-top:142px;width:310px;}
   /* Shop page */
   .halfpictureshop {height:375px;}
-  .ap1{background-image:url('images/shop2-sm.jpg');}
-  .ap2{background-image:url('images/shop1-sm.jpg');}
+  .ap1{background-image:url('../images/shop2-sm.jpg');}
+  .ap2{background-image:url('../images/shop1-sm.jpg');}
 }
 
 @media all and (max-width:550px) {

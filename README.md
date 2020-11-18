@@ -1,8 +1,8 @@
 # Personal website
 
-Designed and developed from scratch.
+Designed and developed from scratch, using just a text editor.
 
-![A website](website.gif)
+<img src="website.gif" width="700">
 
 ## How to view it
 
