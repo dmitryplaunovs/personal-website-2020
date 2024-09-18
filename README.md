@@ -6,8 +6,8 @@ Designed and developed from scratch, using just a text editor.
 
 ## How to view it
 
-- You can see the latest version on www.dmitryplaunov.com
-- You can also run this website locally on your computer by pulling the repository and launching `index.html` from the root directory
+- You can see the latest version on www.dmitryplaunovs.com
+- You can also run this website locally on your device by pulling the repository and launching `index.html` from the root directory
 
 ## License
 
